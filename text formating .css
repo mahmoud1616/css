@@ -1,0 +1,48 @@
+div {
+  background-color: #999;
+  color: black;
+  direction: ltr;
+  text-align: center;
+}
+span {
+  background-color: #999;
+  color: black;
+  direction: ltr;
+  display: block;
+}
+.shadow {
+  /* syntax=> text-shadow: H-shadow V-shadow bluer color*/
+  text-shadow: 1px 1px 1px red;
+}
+div img {
+  /* vertical-align: top or bottom or middle */
+  vertical-align: middle;
+}
+.t-decoration a {
+  /*   text-decoration: line-through or over-line or underline or none;*/
+  text-decoration: none;
+}
+.t-transform {
+  /* text-transform: uppercase or capitalize lowercase; */
+  text-transform: capitalize;
+}
+.t-spacing {
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  text-indent: 60px;
+  line-height: 1.7;
+  /* white-space: nowrap; */
+}
+.word-break {
+  word-break: break-word;
+}
+.t-overflow {
+  width: 115px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis ;
+}
+.t-overflow:hover {
+  overflow: visible;
+}
