@@ -1,0 +1,72 @@
+div {
+  background-color: #aaa;
+  border: 5px solid red;
+  text-align: center;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.inherit {
+  padding: 20px;
+  font-size: 20px;
+}
+.inherit p {
+  border: 3px solid;
+  border-color: inherit;
+  padding: inherit;
+  margin: inherit;
+  width: inherit;
+}
+.f-family {
+  font-size: 25px;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: "Mouse Memoirs";
+}
+
+.f-size {
+  /* css units
+  px
+  em=> take its size from the parent element
+  rem=> take its size from the root element(html)
+  percentage=> take its size from parent element
+  vw=> 1vw = 1/100% of the screen width size
+  vh=> 1vh = 1/100% of the screen height size
+  vmin=> Relative to 1/100% of viewport's* smaller dimension
+  vmax=> Relative to 1/100% of viewport's* larger dimension	
+  */
+  font-size: 20px;
+}
+.f-size span {
+  display: block;
+  font-size: 10vmin;
+}
+
+.f-style {
+  /* font-weight: 800 or bold or lighter or normal; */
+  font-weight: lighter;
+}
+
+.f-style .normal {
+  font-size: 25px;
+  /* font-style: italic; */
+  font-style: italic;
+}
+
+.f-style .small-caps {
+  font-size: 25px;
+  /* font-style: italic; */
+  font-variant: small-caps;
+}
+
+.f-style .t-transform {
+  font-size: 25px;
+  /* font-style: italic; */
+  text-transform: capitalize;
+}
+.m-cursor button{
+  /* you can learn the types of the cursor by searching on  */
+  cursor: pointer;
+}
+.m-cursor p{
+  cursor: grab;
+}
