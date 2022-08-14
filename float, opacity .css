@@ -1,0 +1,64 @@
+.parent-main {
+  background-color: red;
+  padding: 10px;
+  height: 40px;
+}
+.parent-main div {
+  background-color: #999;
+  padding: 10px 0px;
+  width: 25%;
+  float: left;
+}
+.parent-hidden {
+  background-color: red;
+  padding: 10px;
+  overflow: hidden;
+}
+.parent-hidden div {
+  background-color: #999;
+  padding: 10px 0px;
+  width: 25%;
+  float: left;
+}
+.parent-clear {
+  background-color: red;
+  padding: 10px;
+}
+.parent-clear div {
+  background-color: #999;
+  padding: 10px 0px;
+  width: 25%;
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+.parent-margin {
+  margin: 10px 0;
+}
+.parent-margin div{
+  width: calc(94% / 5 );
+  text-align: center;
+  padding: 10px 0;
+  background-color: #999;
+  float: left;
+  margin-left: 1%;
+}
+.parent-calc div{
+  width: calc((100% - 90px) / 5 );
+  text-align: center;
+  padding: 10px 0;
+  background-color: #999;
+  float: left;
+  margin-left: 15px;
+}
+#p-p-one {
+  background-color: rgb(255, 0, 0 , 0.3) ;
+  margin-bottom: 0;
+}
+#p-p-two {
+  background-color: rgb(255, 0, 0 ) ;
+  opacity: 0.3;
+  margin-top: 0;
+}
