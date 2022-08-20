@@ -70,5 +70,6 @@
   float: left;
   border: solid red 5px;
   padding: 10px;
+  /* box-sizing: content-box; */
   box-sizing: border-box;
 }

@@ -1,0 +1,113 @@
+.transition-1 {
+  background-color: #999;
+  width: 300px;
+  height: 150px;
+  transition-duration: 3s, 1s;
+  transition-delay: 0.5s;
+  transition-property: margin-left, margin-top;
+}
+.transition-1:hover {
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 400px;
+}
+.transition-2 {
+  background-color: #999;
+  width: 300px;
+  height: 150px;
+  transition-duration: 3s;
+  /* 
+  transition-timing-function: linear;
+   */
+  transition-timing-function: ease-in-out;
+}
+.transition-2:hover {
+  width: 600px;
+}
+
+.transition-3 {
+  background-color: #999;
+  width: 300px;
+  height: 150px;
+  /* transition: width 3s  1s ease-in-out , height 3s  1s ease-in-out ; */
+  transition: all 3s 1s ease-in-out;
+}
+.transition-3:hover {
+  width: 600px;
+  height: 250px;
+}
+.important {
+  background-color: #999 !important;
+}
+/*
+  The Margin Collapse
+  [1] Only Vertical Margin Collapse
+  [2] Bigger Margin Wins
+  [3] Margin Collapsing doesn't work if there is an element between them
+  [4] Nesting Does Not Prevent Collapse
+*/
+.m-collapse {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+.m-collapse .one {
+  width: 50%;
+  height: 100%;
+  background-color: #999;
+  float: left;
+}
+.m-collapse .two {
+  width: 50%;
+  height: 100%;
+  background-color: #999;
+  float: left;
+}
+.m-collapse .two .up {
+  height: 90px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+.m-collapse .two .down {
+  height: 90px;
+  background-color: blue;
+  margin-top: 20px;
+}
+
+/*
+CSS Variables
+- Global Variable
+- Local Variable
+var(Variable Name, Fall Back Value)
+*/
+:root {
+  --mainColor: black;
+  --mainPadding: 10px;
+}
+.var .main {
+  background-color: var(--mainColor);
+  color: white;
+  padding: calc(20px + var(--mainPadding));
+}
+.var h2 {
+  color: var(--mainColor);
+  background-color: #eee;
+  padding: var(--mainPadding);
+}
+.var p {
+  color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  padding: var(--mainPadding);
+}
+.var a:hover {
+  color: var(--mainColor);
+}
+.var .local {
+  --mainColor: blue;
+  background-color: var(--mainColor);
+  padding: var(--mainPadding);
+  color: #fff;
+  margin: 10px 0;
+}
